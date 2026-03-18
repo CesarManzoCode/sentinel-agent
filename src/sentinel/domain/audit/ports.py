@@ -1,0 +1,16 @@
+from __future__ import annotations
+
+from typing import Protocol
+
+from sentinel.domain.audit.entities import AuditEvent, Trace
+
+
+class TraceRepositoryPort(Protocol):
+    def save_trace(self, trace: Trace) -> None: ...
+    def append_event(self, trace_id: str, event_name: str, payload: dict[str, object]) -> None: ...
+    def get_trace(self, trace_id: str) -> Trace | None: ...
+    def get_last_trace(self) -> Trace | None: ...
+
+
+class EventPublisherPort(Protocol):
+    def publish(self, event: AuditEvent) -> None: ...

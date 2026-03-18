@@ -1,0 +1,14 @@
+[
+  {
+    "memory_id": "mem_sample_1",
+    "memory_type": "episodic",
+    "text": "The demo service previously failed because PYTHONPATH was not set correctly.",
+    "salience": 0.8
+  },
+  {
+    "memory_id": "mem_sample_2",
+    "memory_type": "preference",
+    "text": "The operator prefers concise CLI responses and explicit approval previews.",
+    "salience": 0.7
+  }
+]

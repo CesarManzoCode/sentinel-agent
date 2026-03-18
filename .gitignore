@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Runtime data
+data/**/*.db
+data/**/*.sqlite*
+data/logs/
+data/traces/
+data/vector/
+data/cache/
+data/runtime/
+data/**/*.jsonl
+!data/.gitkeep
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.swp
+*.bak
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Python version managers
+.python-version
+
+# Secrets
+.env
+.env.local
+config.toml

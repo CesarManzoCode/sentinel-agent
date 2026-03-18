@@ -1,0 +1,10 @@
+[
+  {
+    "trace_id": "trc_sample_1",
+    "events": [
+      {"event_name": "plan_created"},
+      {"event_name": "tool_started"},
+      {"event_name": "tool_finished"}
+    ]
+  }
+]

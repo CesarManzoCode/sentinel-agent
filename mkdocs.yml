@@ -1,0 +1,33 @@
+site_name: sentinel-agent
+site_description: Local-first terminal AI agent with policy-gated tooling and hybrid memory.
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Architecture:
+      - Overview: architecture/overview.md
+      - Agent Runtime: architecture/agent-runtime.md
+      - Tool System: architecture/tool-system.md
+      - Safety Model: architecture/safety-model.md
+      - Memory System: architecture/memory-system.md
+      - LLM Layer: architecture/llm-layer.md
+      - Observability: architecture/observability.md
+  - ADR:
+      - 0001 Modular Monolith: adr/0001-modular-monolith.md
+      - 0002 SQLite as Primary Store: adr/0002-sqlite-as-primary-store.md
+      - 0003 Hybrid Memory Retrieval: adr/0003-hybrid-memory-retrieval.md
+      - 0004 Policy-Gated Tool Execution: adr/0004-policy-gated-tool-execution.md
+  - Operations:
+      - Configuration: operations/configuration.md
+      - Logging: operations/logging.md
+      - Backups: operations/backups.md
+      - Troubleshooting: operations/troubleshooting.md
+  - Development:
+      - Local Setup: development/local-setup.md
+      - Testing: development/testing.md
+      - Adding a Tool: development/adding-a-tool.md
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true

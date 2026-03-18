@@ -1,0 +1,29 @@
+[app]
+profile = "balanced"
+debug = false
+
+[llm]
+provider = "groq"
+model = "llama-3.3-70b-versatile"
+base_url = "https://api.groq.com/openai/v1"
+timeout_seconds = 60
+temperature = 0.1
+
+[memory]
+top_k = 8
+embedding_dim = 384
+consolidation_enabled = true
+
+[safety]
+allow_privileged = false
+enable_bwrap = true
+approval_ttl_seconds = 900
+workspace_roots = ["~/work", "~/projects", "~/src"]
+
+[telemetry]
+trace_persist = true
+metrics_enabled = true
+
+[cli]
+streaming = true
+verbose = false
